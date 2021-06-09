@@ -1,0 +1,38 @@
+
+<!-- <div class="col-xs-12">
+<input type="text" #name>
+<button  class="btn btn-primary" type="button" (click)="onSearch(name.value)">Search</button>
+</div> -->
+
+<div id="div">
+  <span>Enter the name of the movie :</span>
+  <input type="text" #name>&nbsp;&nbsp;
+  <button (click)="onSearch(name.value)">Search</button>
+</div>
+
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Loading... </p>  
+    </ngx-spinner>
+<div class="row row-cols-1 row-cols-md-4">
+
+<div class="col-sm-4"  *ngFor="let data of mNames">
+    <div class="card h-auto">
+     <img [src]="data.Poster" class="card-img-top" (click)="onImgClick(data.imdbID)" >
+      <div class="card-body">
+        <h5> Title: {{data.Title}}</h5>
+        Release Data: {{data.Year}}
+        Type: {{data.Type}}
+        <a href="#" routerLink="search"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  
+  
+  
+
+ 
+   

@@ -1,0 +1,27 @@
+#div{
+    height: 100px;
+    background-color: darkslateblue;
+    left: 100px;
+    padding-top: 30px;
+    text-align: center;
+
+
+    
+}
+span{
+    color: white;
+    padding-right: 15px;
+}
+button{
+    color: darkslateblue;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    width: 100px;    
+}
+img {
+    width: 333px;
+    height: 360px;
+    cursor: pointer;
+}
+

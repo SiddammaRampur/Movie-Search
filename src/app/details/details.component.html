@@ -1,0 +1,26 @@
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Loading... </p>  
+    </ngx-spinner>
+
+
+<div class="card mb-3" style="max-width: 750px; position:absolute; left:350px; top:20px;" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="this.details.Poster" class="card-img" alt="..." >
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title" id="center">{{details.Title}}</h4>
+        &nbsp;&nbsp;&nbsp;&nbsp;<h5>Rating: {{this.details.Rated}}</h5><br>
+        <h5>Release Date: {{this.details.Released}}</h5>
+        <h5>Website: {{this.details.Website}}</h5>
+        <h5>Genre: {{this.details.Genre}}</h5>
+        <h5>Director: {{this.details.Director}}</h5>
+        <h5>Cast: {{this.details.Actors}}</h5>
+        <h5>Synopsis</h5>
+        <p class="card-text">{{this.details.Plot}}</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
